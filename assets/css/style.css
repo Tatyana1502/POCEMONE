@@ -57,9 +57,42 @@ img {
 }
 .pokemon-stats  {
     width: 500px;
-    height: 300px;
+    height: 100px;
     font-size: 50px;
     
 
     /* height: 500px; */
+}
+ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    font-size: 50px;
+}
+.pokemon-stats1 {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+}
+.pokemon-stats2 {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+}
+.pokemon-stats3 {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+}
+.pokemon-stats4 {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+}
+.pokemon-stats5 {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
 }

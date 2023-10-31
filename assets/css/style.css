@@ -2,18 +2,19 @@
     box-sizing: border-box;
     margin: 10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 40px;
     width: auto;
     /* border: 1px solid red;  */
 }
 body {
     background-image: url("../img/unnamed.jpg");
-    width: 50%;
-    width: auto;
-    height: auto;
+    /* width: 50%; */
+    width: auto; 
+    height: auto; 
 }
 main {
-    width: auto;
+    width: 1476px;
+    height: 1200px;
     align-content: center;
     text-align: center;
     margin: 115px;
@@ -27,6 +28,7 @@ h1 {
     text-decoration-style: double;
     text-decoration-style: solid;
     font-style: italic;
+    font-size: 50px;
 }
 .pokemon-img {
     width: 300px;
@@ -34,42 +36,42 @@ h1 {
     border: 1px solid rgb(133, 22, 22);
 }
 .stats {
-    width: 400px;
-    height: 400px;
+    width: 1476px;
+    height: 1200px;
 }
 .pokemon-stats  {
-    width: 500px;
-    height: 100px;
+    width: 1250px;
+    height: 80px;
     font-size: 50px;
     margin: 0px 80px;
 }
 .pokemon-stats1 {
-    width: 500px;
-    height: 100px;
+    width: 1250px;
+    height: 80px;
     font-size: 50px;
     margin: 0px 80px;
 }
 .pokemon-stats2 {
-    width: 500px;
-    height: 100px;
+    width: 1250px;
+    height: 80px;
     font-size: 50px;
     margin: 0px 80px;
 }
 .pokemon-stats3 {
-    width: 500px;
-    height: 100px;
+    width: 1250px;
+    height: 80px;
     font-size: 50px;
     margin: 0px 80px;
 }
 .pokemon-stats4 {
-    width: 500px;
-    height: 100px;
+    width: 1250px;
+    height: 80px;
     font-size: 50px;
     margin: 0px 80px;
 }
 .pokemon-stats5 {
-    width: 500px;
-    height: 100px;
+    width: 1250px;
+    height: 80px;
     font-size: 50px;
     margin: 0px 80px;
 }

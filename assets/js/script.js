@@ -8,10 +8,6 @@ const urlApiElements = "https://pokebuildapi.fr/api/v1/types";
 let radioElement;
 radioElement = document.getElementById('radioElement');
 
-
-
-// listPokemons();
-
 document.querySelectorAll("input[type='radio']").forEach(async radio => {
      radio.addEventListener("change", async () => {
      document.querySelector('select').innerHTML = "";
@@ -34,9 +30,7 @@ document.querySelectorAll("input[type='radio']").forEach(async radio => {
             monOption.value = pokemon.name;
             monOption.innerText = pokemon.name;
             document.querySelector('select').appendChild(monOption);
-            
-        })
-        
+         })
 }
 
 async function listElements () {
@@ -50,61 +44,51 @@ async function listElements () {
             document.querySelector('select').appendChild(monOption);       
     });   
 }    
-// document.querySelector("button").addEventListener("click", () => {
-     
-    
+
     listPokemons();
-    // for (;;) {
-        
-    
-             
-                
-                 document.querySelector("button").addEventListener("click", () => {
-                    const radioSelected = document.querySelector("input[type='radio']:checked");
-                    console.log("radio selected : ", radioSelected.value);
-                    if (radioSelected.value == "nom") {
-                        let pokemonSelected = document.querySelector("select").value;
-                        document.querySelector(".pokemon-stats").innerHTML= "";
-                        document.querySelector(".pokemon-stats1").innerHTML= "";
-                        document.querySelector(".pokemon-stats2").innerHTML= ""; 
-                        document.querySelector(".pokemon-stats3").innerHTML= "";
-                        document.querySelector(".pokemon-stats4").innerHTML= "";
-                        document.querySelector(".pokemon-stats5").innerHTML= ""; 
-                        let pokemontrouve = allPokemons.find((pokemon) => pokemon.name == pokemonSelected);
-                        console.log("image:", pokemontrouve.image);
-                        document.querySelector(".pokemon-img").setAttribute("src", pokemontrouve.image);
-                        console.log("stats:", pokemontrouve.stats); 
-                        document.querySelector(".pokemon-stats").innerHTML= "HP : " + pokemontrouve.stats.HP;
-                        document.querySelector(".pokemon-stats1").innerHTML= "attack : " + pokemontrouve.stats.attack;
-                        document.querySelector(".pokemon-stats2").innerHTML= "defense : " + pokemontrouve.stats.defense; 
-                        document.querySelector(".pokemon-stats3").innerHTML= "special_attack : " + pokemontrouve.stats.special_attack;
-                        document.querySelector(".pokemon-stats4").innerHTML= "special_defense : " + pokemontrouve.stats.defense;
-                        document.querySelector(".pokemon-stats5").innerHTML= "speed : " + pokemontrouve.stats.speed;   
-                    }
-                    if (radioSelected.value == "element") {   
-                        // let radioSelected = document.querySelector("input[type='radio']:checked");
-                        console.log(radioSelected);
-                        console.log(radioSelected.value); 
-                       
-                         let elementSelected = document.querySelector("select").value;
-                         document.querySelector(".pokemon-stats").innerHTML= "";
-                         document.querySelector(".pokemon-stats1").innerHTML= "";
-                         document.querySelector(".pokemon-stats2").innerHTML= ""; 
-                         document.querySelector(".pokemon-stats3").innerHTML= "";
-                         document.querySelector(".pokemon-stats4").innerHTML= "";
-                         document.querySelector(".pokemon-stats5").innerHTML= ""; 
-                        let pokemontrouvea = allElements.find((element) => element.name == elementSelected);
-                        console.log("image:", pokemontrouvea.image);
-                        document.querySelector(".pokemon-img").setAttribute("src", pokemontrouvea.image);
-                        console.log("name:", pokemontrouvea.name); 
-                        document.querySelector(".pokemon-stats").innerHTML= "name : " + pokemontrouvea.name;
-                    } 
-                })
+
+     document.querySelector("button").addEventListener("click", () => {
+        const radioSelected = document.querySelector("input[type='radio']:checked");
+         console.log("radio selected : ", radioSelected.value);
+             if (radioSelected.value == "nom") {
+                 let pokemonSelected = document.querySelector("select").value;
+                 document.querySelector(".pokemon-stats").innerHTML= "";
+                 document.querySelector(".pokemon-stats1").innerHTML= "";
+                 document.querySelector(".pokemon-stats2").innerHTML= ""; 
+                 document.querySelector(".pokemon-stats3").innerHTML= "";
+                 document.querySelector(".pokemon-stats4").innerHTML= "";
+                 document.querySelector(".pokemon-stats5").innerHTML= ""; 
+                     let pokemontrouve = allPokemons.find((pokemon) => pokemon.name == pokemonSelected);
+                     console.log("image:", pokemontrouve.image);
+                     document.querySelector(".pokemon-img").setAttribute("src", pokemontrouve.image);
+                         console.log("stats:", pokemontrouve.stats); 
+                         document.querySelector(".pokemon-stats").innerHTML= "HP : " + pokemontrouve.stats.HP;
+                         document.querySelector(".pokemon-stats1").innerHTML= "attack : " + pokemontrouve.stats.attack;
+                         document.querySelector(".pokemon-stats2").innerHTML= "defense : " + pokemontrouve.stats.defense; 
+                         document.querySelector(".pokemon-stats3").innerHTML= "special_attack : " + pokemontrouve.stats.special_attack;
+                         document.querySelector(".pokemon-stats4").innerHTML= "special_defense : " + pokemontrouve.stats.defense;
+                         document.querySelector(".pokemon-stats5").innerHTML= "speed : " + pokemontrouve.stats.speed;   
+             }
+             if (radioSelected.value == "element") {   
+                 console.log(radioSelected);
+                 console.log(radioSelected.value); 
+                 let elementSelected = document.querySelector("select").value;
+                 document.querySelector(".pokemon-stats").innerHTML= "";
+                 document.querySelector(".pokemon-stats1").innerHTML= "";
+                 document.querySelector(".pokemon-stats2").innerHTML= ""; 
+                 document.querySelector(".pokemon-stats3").innerHTML= "";
+                 document.querySelector(".pokemon-stats4").innerHTML= "";
+                 document.querySelector(".pokemon-stats5").innerHTML= ""; 
+                     let pokemontrouvea = allElements.find((element) => element.name == elementSelected);
+                     console.log("image:", pokemontrouvea.image);
+                     document.querySelector(".pokemon-img").setAttribute("src", pokemontrouvea.image);
+                     console.log("name:", pokemontrouvea.name); 
+                     document.querySelector(".pokemon-stats").innerHTML= "name : " + pokemontrouvea.name;
+            } 
+    })
 
             
       
            
             
-        // }
-    
-        // })
+   
